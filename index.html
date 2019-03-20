@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+	<style>
+		.dropbtn {
+		  background-color: #3498DB;
+		  color: white;
+		  padding: 16px;
+		  font-size: 16px;
+		  border: none;
+		  cursor: pointer;
+		}
+
+		.dropbtn:hover, .dropbtn:focus {
+		  background-color: #2980B9;
+		}
+
+		.dropdown {
+		  position: relative;
+		  display: inline-block;
+		}
+
+		.dropdown-content {
+		  display: none;
+		  position: absolute;
+		  background-color: #f1f1f1;
+		  min-width: 160px;
+		  overflow: auto;
+		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		  z-index: 1;
+		}
+
+		.dropdown-content a {
+		  color: black;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  display: block;
+		}
+
+		.dropdown a:hover {background-color: #ddd;}
+
+		.show {display: block;}
+	</style>
+	<title> GoDataGo</title>
+
+	</head>
+
+	<body>
+		<div class="Dropdown">
+		  <button onclick="myFunction()" class="dropbtn">Filter Charts</button>
+		  <div id="myDropdown" class="dropdown-content">
+		    <a href="#language" onclick="clickedLanguage()">Languages </a>
+		    <a href="#framework"  onclick="clickedFramework()">Frameworks</a>
+		    <a href="#database"  onclick="clickedDatabase()"> Databases</a>
+		  </div>
+		</div> 
+
+		
+
+		<canvas 
+		id="language" width="400" height="400">
+		</canvas>
+
+		<canvas 
+		id="framework" width="400" height="400">
+		</canvas>
+
+		<canvas 
+		id="database" width="400" height="400">
+		</canvas>
+
+
+
+
+		<script src="mycharts.js"></script>
+
+	</body>
+</html>
